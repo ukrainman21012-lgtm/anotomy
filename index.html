@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f5f8f3">
+  <meta name="description" content="Flora-Anotomy — интерактивный ботанический атлас с проверенными фотографиями, советами по уходу и личной коллекцией.">
+  <meta name="author" content="Кузьменко Матвей">
+  <meta name="application-name" content="Flora-Anotomy">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Flora-Anotomy">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Flora-Anotomy">
+  <meta property="og:title" content="Flora-Anotomy — ботанический атлас">
+  <meta property="og:description" content="Интерактивный ботанический атлас с проверенными фотографиями и советами по уходу.">
+  <meta property="og:url" content="https://flora-anotomy.linkpc.net/">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://flora-anotomy.linkpc.net/">
+  <link rel="sitemap" type="application/xml" href="https://flora-anotomy.linkpc.net/sitemap.xml">
+  <title>Flora-Anotomy — ботанический атлас растений</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Flora-Anotomy",
+      "alternateName": "flora-anotomy",
+      "url": "https://flora-anotomy.linkpc.net/",
+      "description": "Интерактивный ботанический атлас с проверенными фотографиями и советами по уходу.",
+      "inLanguage": "ru",
+      "creator": {
+        "@type": "Person",
+        "name": "Кузьменко Матвей"
+      }
+    }
+  </script>
+  <link rel="manifest" href="./manifest.webmanifest.json?v=92">
+  <link rel="icon" href="./icon.svg?v=92" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png?v=92">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://wsrv.nl">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css?v=105">
+</head>
+<body>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-flower" viewBox="0 0 24 24"><path d="M12 12c-3-1-4-4-2-6 1.5-1.5 3.5-.5 4 2 2-2 4-1 4 1 0 2-2 3-6 3Zm0 0c1-3 4-4 6-2 1.5 1.5.5 3.5-2 4 2 2 1 4-1 4-2 0-3-2-3-6Zm0 0c3 1 4 4 2 6-1.5 1.5-3.5.5-4-2-2 2-4 1-4-1 0-2 2-3 6-3Zm0 0c-1 3-4 4-6 2-1.5-1.5-.5-3.5 2-4-2-2-1-4 1-4 2 0 3 2 3 6Z"/><circle cx="12" cy="12" r="1.4"/></symbol>
+    <symbol id="icon-plant" viewBox="0 0 24 24"><path d="M12 21v-9m0 3c-5 0-8-2-8-7 5 0 8 2 8 7Zm0-3c0-5 3-8 8-8 0 5-3 8-8 8Z"/></symbol>
+    <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></symbol>
+    <symbol id="icon-water" viewBox="0 0 24 24"><path d="M12 3C9 7 6 10.3 6 14a6 6 0 0 0 12 0c0-3.7-3-7-6-11Z"/><path d="M9.5 15.5a2.5 2.5 0 0 0 2.5 2"/></symbol>
+    <symbol id="icon-heart" viewBox="0 0 24 24"><path d="M20.8 8.7c0 5-8.8 11-8.8 11s-8.8-6-8.8-11A4.7 4.7 0 0 1 12 6.2a4.7 4.7 0 0 1 8.8 2.5Z"/></symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="icon-book" viewBox="0 0 24 24"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21Zm0 0v13A2.5 2.5 0 0 1 6.5 16H20M8 7h8m-8 4h7"/></symbol>
+    <symbol id="icon-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 17h.01M12 17h.01"/></symbol>
+    <symbol id="icon-file" viewBox="0 0 24 24"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v6h5m-9 4h5m-5 4h5"/></symbol>
+    <symbol id="icon-note" viewBox="0 0 24 24"><path d="M5 4h10l4 4v5m-8 8H5V4m10 0v5h4m-9 2h5m-5 4h2"/><path d="m14 19 5-5 2 2-5 5-3 1 1-3Z"/></symbol>
+    <symbol id="icon-transfer" viewBox="0 0 24 24"><path d="M7 3v14m-4-4 4 4 4-4M17 21V7m-4 4 4-4 4 4"/></symbol>
+    <symbol id="icon-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 19v2h16v-2"/></symbol>
+    <symbol id="icon-palette" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18h1.2a2 2 0 0 0 1.4-3.4 1.7 1.7 0 0 1 1.2-2.9H18a3 3 0 0 0 3-3c0-4.8-4-8.7-9-8.7Z"/><circle cx="7.5" cy="11" r=".8"/><circle cx="10" cy="7.5" r=".8"/><circle cx="15" cy="8" r=".8"/></symbol>
+    <symbol id="icon-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10h.01"/></symbol>
+    <symbol id="icon-dice" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 8h.01M16 8h.01M12 12h.01M8 16h.01M16 16h.01"/></symbol>
+    <symbol id="icon-spark" viewBox="0 0 24 24"><path d="m12 2 1.8 7.2L21 12l-7.2 1.8L12 21l-1.8-7.2L3 12l7.2-2.8L12 2Z"/><path d="m19 2 .8 2.2L22 5l-2.2.8L19 8l-.8-2.2L16 5l2.2-.8L19 2Z"/></symbol>
+    <symbol id="icon-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-6v-7h-4v7H4a1 1 0 0 1-1-1Z"/></symbol>
+    <symbol id="icon-moon" viewBox="0 0 24 24"><path d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5 8.7 8.7 0 1 0 20.5 15.5Z"/></symbol>
+    <symbol id="icon-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+    <symbol id="icon-alert" viewBox="0 0 24 24"><path d="m12 3 10 18H2L12 3Z"/><path d="M12 9v5m0 3h.01"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="icon-volume" viewBox="0 0 24 24"><path d="M4 10v4h4l5 4V6l-5 4H4Z"/><path d="M16 9a5 5 0 0 1 0 6m2-9a9 9 0 0 1 0 12"/></symbol>
+    <symbol id="icon-volume-off" viewBox="0 0 24 24"><path d="M4 10v4h4l5 4V6l-5 4H4Z"/><path d="m17 9 5 6m0-6-5 6"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="icon-leaf" viewBox="0 0 24 24"><path d="M20 4c-9 0-15 3-15 10a6 6 0 0 0 6 6c7 0 9-7 9-16Z"/><path d="M5 20c3-4 7-7 12-10"/></symbol>
+  </svg>
+  <div class="topline">Цветы, кактусы и другие растения — ваш личный ботанический атлас</div>
+  <header class="app-header">
+    <div class="header-inner shell">
+      <a class="brand" href="#home" aria-label="Flora-Anotomy — на главную">
+        <span class="brand-mark" aria-hidden="true"><svg class="ui-icon"><use href="#icon-flower"></use></svg></span>
+        <span>Flora-Anotomy</span>
+      </a>
+      <nav class="primary-nav" aria-label="Основные разделы">
+        <button class="primary-nav-link" type="button" data-go="catalog">Атлас растений</button>
+        <button class="primary-nav-link primary-collection-link" type="button" data-go="collection">Моя коллекция <span class="primary-collection-count" id="collection-count" aria-label="0 растений">0</span></button>
+        <button class="primary-nav-link" type="button" data-go="season">Сезонный трекер</button>
+        <button class="primary-nav-link" type="button" data-go="botanist">Угадай растение</button>
+      </nav>
+      <div class="header-actions">
+        <label class="visually-hidden" for="palette-select">Выбрать цветовую тему</label>
+        <select class="palette-select visually-hidden" id="palette-select" aria-label="Выбрать цвет оформления" title="Выбрать цвет оформления">
+          <option value="green">Шалфей</option>
+          <option value="lavender">Лаванда</option>
+          <option value="rose">Роза</option>
+          <option value="sand">Песок</option>
+        </select>
+        <div class="palette-swatches" role="group" aria-label="Цветовая тема">
+          <button class="palette-swatch palette-swatch-green" type="button" data-palette-choice="green" aria-label="Тема «Шалфей»" title="Шалфей"></button>
+          <button class="palette-swatch palette-swatch-lavender" type="button" data-palette-choice="lavender" aria-label="Тема «Лаванда»" title="Лаванда"></button>
+          <button class="palette-swatch palette-swatch-rose" type="button" data-palette-choice="rose" aria-label="Тема «Роза»" title="Роза"></button>
+          <button class="palette-swatch palette-swatch-sand" type="button" data-palette-choice="sand" aria-label="Тема «Песок»" title="Песок"></button>
+        </div>
+        <button class="icon-button install-app-button" id="install-app" type="button" aria-label="Установить приложение" title="Установить приложение"><svg class="ui-icon"><use href="#icon-download"></use></svg></button>
+        <button class="account-cta account-open" id="account-open" type="button" aria-label="Создать аккаунт или войти" title="Аккаунт и синхронизация"><svg class="ui-icon" aria-hidden="true"><use href="#icon-user"></use></svg><span id="account-open-label">Создать аккаунт</span></button>
+        <button class="icon-button" id="sound-toggle" type="button" aria-label="Включить звуки интерфейса" title="Включить звуки интерфейса" aria-pressed="false"></button>
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="Включить тёмное оформление" title="Включить тёмное оформление"><svg class="ui-icon"><use href="#icon-moon"></use></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="flora-ai-widget">
+    <section class="flora-ai-panel" id="flora-ai-panel" aria-label="Чат с помощником Flora" hidden>
+      <header class="flora-ai-header">
+        <div class="flora-ai-brand">
+          <span class="flora-ai-mark" aria-hidden="true"><svg class="ui-icon"><use href="#icon-spark"></use></svg></span>
+          <div>
+            <strong>Flora</strong>
+            <span class="flora-ai-presence" id="flora-ai-presence"><i></i> Проверяем связь…</span>
+          </div>
+        </div>
+        <div class="flora-ai-header-actions">
+          <button class="flora-ai-close" id="flora-ai-clear" type="button" aria-label="Начать новый диалог" title="Новый диалог"><svg class="ui-icon"><use href="#icon-dice"></use></svg></button>
+          <button class="flora-ai-close" id="flora-ai-close" type="button" aria-label="Закрыть чат"><svg class="ui-icon"><use href="#icon-close"></use></svg></button>
+        </div>
+      </header>
+      <div class="flora-ai-intro">
+        <span class="flora-ai-eyebrow">БОТАНИЧЕСКИЙ ПОМОЩНИК</span>
+        <p>Я Flora. Помогу разобраться в уходе, выбрать растение и найти ответ на ботанический вопрос.</p>
+      </div>
+      <div class="flora-ai-messages" id="flora-ai-messages" role="log" aria-live="polite" aria-relevant="additions text">
+        <article class="flora-ai-message flora-ai-message-assistant">
+          <span class="flora-ai-avatar" aria-hidden="true"><svg class="ui-icon"><use href="#icon-leaf"></use></svg></span>
+          <p>Привет! Я Flora 🌿 Спросите меня про полив, освещение или уход за конкретным растением.</p>
+        </article>
+      </div>
+      <div class="flora-ai-suggestions" id="flora-ai-suggestions" aria-label="Примеры вопросов">
+        <button class="flora-ai-suggestion" type="button">Как часто поливать монстеру?</button>
+        <button class="flora-ai-suggestion" type="button">Как понять, что орхидею пора поливать?</button>
+        <button class="flora-ai-suggestion" type="button">Какое растение подойдёт для тени?</button>
+        <button class="flora-ai-suggestion" type="button">Почему желтеют листья?</button>
+      </div>
+      <form class="flora-ai-form" id="flora-ai-form">
+        <label class="visually-hidden" for="flora-ai-input">Ваш вопрос ботаническому помощнику</label>
+        <textarea id="flora-ai-input" name="message" rows="1" maxlength="1200" placeholder="Напишите свой вопрос…" required></textarea>
+        <button class="flora-ai-send" id="flora-ai-send" type="submit" aria-label="Отправить сообщение"><svg class="ui-icon"><use href="#icon-arrow"></use></svg></button>
+      </form>
+      <p class="flora-ai-footnote">История чата хранится отдельно для каждого ника на этом устройстве. Ответы ИИ могут быть неточными; не отправляйте личные данные.</p>
+    </section>
+    <button class="flora-ai-toggle" id="flora-ai-toggle" type="button" aria-label="Спросить Flora" aria-expanded="false" aria-controls="flora-ai-panel">
+      <svg class="ui-icon flora-ai-toggle-spark"><use href="#icon-spark"></use></svg>
+      <span class="flora-ai-toggle-text">Спросить Flora</span>
+      <svg class="ui-icon flora-ai-toggle-chat"><use href="#icon-note"></use></svg>
+    </button>
+  </div>
+
+  <main class="main-content shell">
+    <section class="page" id="page-home" data-page="home" aria-label="Главная">
+      <div class="hero-card">
+        <div class="hero-copy">
+          <div class="eyebrow" id="hero-greeting">Интерактивный ботанический атлас</div>
+          <h1>Откройте мир<br><span class="gradient-text">растений.</span></h1>
+          <p>Изучайте виды, находите интересные растения и сохраняйте их в свою коллекцию.</p>
+          <div class="hero-actions">
+            <button class="button" type="button" data-go="catalog"><svg class="ui-icon"><use href="#icon-book"></use></svg> Открыть каталог <span>→</span></button>
+            <button class="button secondary" type="button" data-go="luck"><svg class="ui-icon"><use href="#icon-dice"></use></svg> Случайное растение</button>
+          </div>
+        </div>
+        <div class="hero-art">
+          <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1000&q=75" alt="Букет сезонных цветов" width="1000" height="750" fetchpriority="high" decoding="async">
+          <a class="hero-art-label" id="hero-art-label" href="https://www.gbif.org/" target="_blank" rel="noopener noreferrer">Ботанический атлас</a>
+          <span class="hero-orbit">Расти<br>в своём<br>ритме</span>
+        </div>
+      </div>
+
+      <section class="flora-home-card" aria-labelledby="flora-home-title">
+        <div class="flora-home-mark" aria-hidden="true"><svg class="ui-icon"><use href="#icon-spark"></use></svg></div>
+        <div class="flora-home-copy">
+          <span class="eyebrow">Ваш ботанический ИИ-помощник</span>
+          <h2 id="flora-home-title">Знакомьтесь, Flora</h2>
+          <p>Подскажет, как ухаживать за растениями, поможет выбрать вид и объяснит, что делать, если листья теряют силу. Спросите своими словами — без сложных терминов.</p>
+          <div class="flora-home-topics" aria-label="Flora поможет с уходом, выбором растения и ботаническими вопросами">
+            <span>Уход за растениями</span><span>Подбор вида</span><span>Ответы с источниками</span>
+          </div>
+        </div>
+        <button class="button flora-home-ask" type="button" data-ai-open>
+          <svg class="ui-icon"><use href="#icon-note"></use></svg> Спросить Flora
+        </button>
+      </section>
+
+      <div class="home-facts" aria-label="Атлас в цифрах">
+        <div class="home-fact"><svg class="ui-icon"><use href="#icon-book"></use></svg><span><strong id="flower-total">Загрузка каталога…</strong><small>в каталоге</small></span></div>
+        <div class="home-fact"><svg class="ui-icon"><use href="#icon-plant"></use></svg><span><strong id="group-total">6 групп</strong><small>для изучения</small></span></div>
+        <div class="home-fact"><svg class="ui-icon"><use href="#icon-heart"></use></svg><span><strong id="favorite-total">0 растений</strong><small>в коллекции</small></span></div>
+      </div>
+    </section>
+
+    <section class="page" id="page-catalog" data-page="catalog" aria-label="Каталог растений" hidden>
+      <div class="page-title-row">
+        <div><div class="eyebrow">Ботаническая коллекция</div><h1>Атлас <span class="gradient-text">растений</span></h1><p class="muted" style="margin:0;font-size:12px">Цветы, кактусы, суккуленты, папоротники, хвойные, деревья и кустарники — найдите любимое растение.</p></div>
+        <button class="button secondary season-open-button" type="button" data-go="season"><svg class="ui-icon"><use href="#icon-calendar"></use></svg> Сезонный трекер</button>
+      </div>
+      <div class="catalog-toolbar">
+        <div class="search-wrap"><input class="search-input" id="flower-search" type="search" autocomplete="off" placeholder="Название или научное имя…" aria-label="Живой поиск по названию растения" aria-describedby="search-hint" aria-autocomplete="list" aria-controls="flower-suggestions" aria-expanded="false"><div class="search-suggestion" id="flower-suggestions" role="listbox" aria-label="Самое подходящее растение" hidden></div><span class="visually-hidden" id="search-hint">Карточки фильтруются сразу при вводе. Можно искать по русскому и научному названию. В подсказке показано одно самое подходящее название.</span></div>
+      </div>
+      <details class="catalog-filter-disclosure">
+        <summary>Фильтры <span>Группа, сортировка, свет и полив</span></summary>
+        <div class="catalog-filter-panel">
+          <label class="catalog-control" for="catalog-group-filter">Группа растений
+            <select id="catalog-group-filter" aria-label="Фильтр по группе растений">
+              <option value="all">Все группы</option>
+              <option value="Цветы">Цветы</option>
+              <option value="Кактусы">Кактусы</option>
+              <option value="Суккуленты">Суккуленты</option>
+              <option value="Папоротники">Папоротники</option>
+              <option value="Хвойные">Хвойные</option>
+              <option value="Деревья и кустарники">Деревья и кустарники</option>
+            </select>
+          </label>
+          <label class="catalog-sort-label" for="catalog-sort">Сортировка
+            <select id="catalog-sort" aria-label="Сортировка растений">
+              <option value="default">По умолчанию</option>
+              <option value="popular" title="Сначала подборка популярных растений">Сначала популярные</option>
+              <option value="alphabetical">По алфавиту (А–Я)</option>
+            </select>
+          </label>
+          <label class="care-filter-label" for="care-light-filter">Освещение
+            <select id="care-light-filter">
+              <option value="all">Любое</option>
+              <option value="sun">Яркий свет</option>
+              <option value="partial">Полутень</option>
+              <option value="shade">Тень</option>
+            </select>
+          </label>
+          <label class="care-filter-label" for="care-water-filter">Полив
+            <select id="care-water-filter">
+              <option value="all">Любой</option>
+              <option value="rare">Редкий</option>
+              <option value="moderate">Умеренный</option>
+              <option value="moist">Частый / влажный грунт</option>
+            </select>
+          </label>
+          <p class="catalogue-note">Рекомендации по уходу ориентировочные и могут различаться у видов и сортов.</p>
+        </div>
+      </details>
+      <p class="catalog-count" id="catalog-count" aria-live="polite"></p>
+      <section class="recent-plants" id="recent-plants" aria-label="Недавно просмотренные" hidden>
+        <div class="recent-plants-heading">
+          <h2>Недавно просмотренные</h2>
+          <button class="recent-plants-clear" id="recent-plants-clear" type="button" aria-label="Очистить недавно просмотренные">Очистить</button>
+        </div>
+        <div class="recent-plants-list" id="recent-plants-list"></div>
+      </section>
+      <div class="search-empty" id="search-empty" role="status" aria-live="polite" hidden>
+        <strong><svg class="ui-icon"><use href="#icon-leaf"></use></svg> Растение не найдено</strong>
+        <span>Попробуйте изменить запрос или проверить раскладку клавиатуры</span>
+      </div>
+      <div class="flower-grid" id="flower-grid" aria-busy="true">
+        <article class="flower-card skeleton-card" aria-hidden="true"><div class="skeleton skeleton-photo"></div><div class="skeleton-card-copy"><div class="skeleton skeleton-line skeleton-line-title"></div><div class="skeleton skeleton-line"></div><div class="skeleton skeleton-line skeleton-line-short"></div><div class="skeleton skeleton-button"></div></div></article>
+        <article class="flower-card skeleton-card" aria-hidden="true"><div class="skeleton skeleton-photo"></div><div class="skeleton-card-copy"><div class="skeleton skeleton-line skeleton-line-title"></div><div class="skeleton skeleton-line"></div><div class="skeleton skeleton-line skeleton-line-short"></div><div class="skeleton skeleton-button"></div></div></article>
+        <article class="flower-card skeleton-card" aria-hidden="true"><div class="skeleton skeleton-photo"></div><div class="skeleton-card-copy"><div class="skeleton skeleton-line skeleton-line-title"></div><div class="skeleton skeleton-line"></div><div class="skeleton skeleton-line skeleton-line-short"></div><div class="skeleton skeleton-button"></div></div></article>
+        <article class="flower-card skeleton-card" aria-hidden="true"><div class="skeleton skeleton-photo"></div><div class="skeleton-card-copy"><div class="skeleton skeleton-line skeleton-line-title"></div><div class="skeleton skeleton-line"></div><div class="skeleton skeleton-line skeleton-line-short"></div><div class="skeleton skeleton-button"></div></div></article>
+        <article class="flower-card skeleton-card" aria-hidden="true"><div class="skeleton skeleton-photo"></div><div class="skeleton-card-copy"><div class="skeleton skeleton-line skeleton-line-title"></div><div class="skeleton skeleton-line"></div><div class="skeleton skeleton-line skeleton-line-short"></div><div class="skeleton skeleton-button"></div></div></article>
+        <article class="flower-card skeleton-card" aria-hidden="true"><div class="skeleton skeleton-photo"></div><div class="skeleton-card-copy"><div class="skeleton skeleton-line skeleton-line-title"></div><div class="skeleton skeleton-line"></div><div class="skeleton skeleton-line skeleton-line-short"></div><div class="skeleton skeleton-button"></div></div></article>
+      </div>
+      <nav class="catalog-pagination" id="catalog-pagination" aria-label="Страницы атласа">
+        <button class="button ghost small" id="previous-page" type="button">← Назад</button>
+        <span id="page-indicator" aria-live="polite"></span>
+        <button class="button ghost small" id="next-page" type="button">Дальше →</button>
+      </nav>
+    </section>
+
+    <section class="page" id="page-season" data-page="season" aria-label="Сезонный трекер" hidden>
+      <div class="page-title-row">
+        <div><div class="eyebrow">Личные наблюдения</div><h1>Сезонный <span class="gradient-text">трекер</span></h1><p class="muted season-intro">Отмечайте, когда вы заметили цветение растений. Записи сохраняются только в этом браузере.</p></div>
+        <button class="button secondary" type="button" data-go="catalog">← К атласу</button>
+      </div>
+      <section class="surface-card season-tracker">
+        <div class="season-toolbar">
+          <div class="season-month-grid" id="season-months" role="group" aria-label="Выберите месяц"></div>
+          <label class="season-year-label" for="season-year">Год наблюдений
+            <select id="season-year" aria-label="Год наблюдений"></select>
+          </label>
+        </div>
+        <p class="season-summary" id="season-summary" aria-live="polite"></p>
+        <div class="season-tracker-columns">
+          <section class="season-panel" aria-labelledby="season-search-title">
+            <h2 id="season-search-title">Добавить наблюдение</h2>
+            <p>Найдите растение, которое цветёт в выбранный месяц.</p>
+            <label class="visually-hidden" for="season-search">Поиск растения для сезонного наблюдения</label>
+            <input id="season-search" type="search" autocomplete="off" placeholder="Название растения…" aria-label="Найти растение">
+            <div class="season-search-results" id="season-search-results" role="list" aria-live="polite"></div>
+          </section>
+          <section class="season-panel" aria-labelledby="season-observations-title">
+            <h2 id="season-observations-title">Мои наблюдения</h2>
+            <p class="season-observations-hint" id="season-observations-hint"></p>
+            <div class="season-observation-list" id="season-observation-list"></div>
+            <button class="button secondary small observations-empty-action" id="observations-empty-action" type="button">Добавить наблюдение</button>
+          </section>
+        </div>
+        <p class="season-note">Периоды цветения зависят от вида, климата и места выращивания. Здесь отображаются ваши наблюдения, а не универсальный календарь цветения.</p>
+      </section>
+    </section>
+
+    <section class="page" id="page-collection" data-page="collection" aria-label="Моя коллекция" hidden>
+      <div class="page-title-row">
+        <div><div class="eyebrow">Личный гербарий</div><h1>Моя <span class="gradient-text">коллекция</span></h1><p class="muted" style="margin:0;font-size:12px">Сохранённые растения — ваша личная подборка из ботанического атласа.</p></div>
+        <button class="button secondary" type="button" data-go="catalog">← Вернуться в атлас</button>
+      </div>
+      <p class="catalog-count" id="collection-count-label" aria-live="polite"></p>
+      <p class="collection-stat" id="collection-stat" role="status" aria-live="polite" aria-label="Статистика коллекции" hidden></p>
+      <div class="flower-grid" id="collection-grid"></div>
+      <button class="button secondary collection-empty-action" type="button" data-go="catalog">Открыть каталог растений</button>
+    </section>
+
+    <section class="page" id="page-luck" data-page="luck" aria-label="Случайное растение" hidden>
+      <div class="page-title-row"><div><div class="eyebrow">Небольшое открытие</div><h1>Случайное <span class="gradient-text">растение</span></h1><p class="muted" style="margin:0;font-size:12px">Познакомьтесь с одним из растений атласа — или выберите другое.</p></div></div>
+      <section class="surface-card random-pick-card" aria-live="polite">
+        <div class="random-pick-result" id="random-pick-result"></div>
+        <button class="button" id="random-pick-again" type="button"><svg class="ui-icon"><use href="#icon-dice"></use></svg> Ещё случайное растение</button>
+      </section>
+    </section>
+
+    <section class="page" id="page-botanist" data-page="botanist" aria-label="Игра «Угадай растение»" hidden>
+      <div class="page-title-row"><div><div class="eyebrow">Игра для исследователей</div><h1>Угадай <span class="gradient-text">растение</span></h1><p class="muted" style="margin:0;font-size:12px">Посмотрите на фото и выберите правильное название.</p></div></div>
+      <section class="surface-card botanist-game" aria-label="Викторина по растениям">
+        <p class="botanist-score" id="botanist-score" aria-live="polite">Угадано: 0</p>
+        <div class="botanist-photo-wrap">
+          <img id="botanist-image" alt="Фотография растения для викторины" width="900" height="675" decoding="async">
+        </div>
+        <div class="botanist-answers" id="botanist-answers" role="group" aria-label="Выберите название растения"></div>
+        <p class="botanist-feedback" id="botanist-feedback" role="status" aria-live="polite"></p>
+      </section>
+    </section>
+
+    <section class="page" id="page-picker" data-page="picker" aria-label="Подбор по настроению" hidden>
+      <div class="page-title-row"><div><div class="eyebrow">Персональная рекомендация</div><h1>Подбор <span class="gradient-text">по настроению</span></h1><p class="muted" style="margin:0;font-size:12px">Выберите настроение, класс и семейство растения из всего проверенного атласа.</p></div></div>
+      <div class="feature-layout">
+        <form class="surface-card picker-card" id="picker-form">
+          <div class="widget-head"><h2>Что вам сейчас близко?</h2><span class="challenge-badge"><svg class="ui-icon"><use href="#icon-spark"></use></svg></span></div>
+          <div class="picker-fields">
+            <div class="field"><label for="picker-mood">Настроение</label><select id="picker-mood"><option value="all">Любое</option><option value="Спокойствие">Спокойствие</option><option value="Радость">Радость</option><option value="Нежность">Нежность</option><option value="Энергия">Энергия</option><option value="Мечтательность">Мечтательность</option></select></div>
+            <div class="field"><label for="picker-class">Группа растений</label><select id="picker-class"><option value="all">Любая группа</option><option value="Цветы">Цветы</option><option value="Кактусы">Кактусы</option><option value="Суккуленты">Суккуленты</option><option value="Папоротники">Папоротники</option><option value="Хвойные">Хвойные</option><option value="Деревья и кустарники">Деревья и кустарники</option></select></div>
+            <div class="field"><label for="picker-family">Семейство</label><select id="picker-family"><option value="all">Любое семейство</option></select></div>
+          </div>
+          <button class="button full" type="submit">Подобрать растение →</button>
+          <div class="status-message picker-result" id="picker-result" role="status">Ваше цветочное совпадение появится здесь.</div>
+        </form>
+        <aside class="surface-card home-widget">
+          <div class="challenge-badge">✧</div><h2 style="margin-top:14px">Не ищите идеальное растение.</h2>
+          <p class="muted" style="font-size:13px;line-height:1.8;margin-top:12px">Ищите тот, который подходит именно сегодняшнему дню. Результат можно сохранить в избранное или открыть в атласе.</p>
+          <button class="button secondary" type="button" data-go="catalog">Смотреть весь атлас</button>
+        </aside>
+      </div>
+    </section>
+
+    <section class="page" id="page-guide" data-page="guide" aria-label="О проекте и инструкция" hidden>
+      <div class="page-title-row"><div><div class="eyebrow">Идея проекта</div><h1>Ближе к природе — <span class="gradient-text">каждый день</span></h1><p class="muted about-page-lead">Flora-Anotomy помогает открывать растения, учиться заботиться о них и собирать собственную зелёную коллекцию.</p></div></div>
+      <div class="about-banner surface-card">
+        <div class="about-banner-heading">
+          <span class="about-mark" aria-hidden="true"><svg class="ui-icon"><use href="#icon-flower"></use></svg></span>
+          <div><div class="eyebrow">Ваш личный ботанический атлас</div><h2>У каждого растения своя история</h2></div>
+        </div>
+        <p class="about-banner-intro">Здесь встречаются проверенные фотографии, понятные карточки растений и полезные инструменты для вашего домашнего сада. Исследуйте атлас в своём темпе: аккаунт не обязателен.</p>
+        <div class="about-facts" aria-label="О проекте в цифрах">
+          <div class="about-fact"><strong>1 111</strong><span>карточек растений</span></div>
+          <div class="about-fact"><strong>6</strong><span>ботанических групп</span></div>
+          <div class="about-fact"><strong>Ваш темп</strong><span>исследуйте без регистрации</span></div>
+        </div>
+        <div class="about-columns">
+          <article class="about-detail">
+            <span class="about-detail-icon"><svg class="ui-icon"><use href="#icon-book"></use></svg></span>
+            <div><h3>Открывайте новое</h3><p>Изучайте названия, особенности и фотографии цветов, кактусов, суккулентов и других растений.</p></div>
+          </article>
+          <article class="about-detail">
+            <span class="about-detail-icon"><svg class="ui-icon"><use href="#icon-flower"></use></svg></span>
+            <div><h3>Заботьтесь увереннее</h3><p>Смотрите ориентиры по освещению и поливу. Подсказки общие — учитывайте конкретный вид и условия дома.</p></div>
+          </article>
+          <article class="about-detail">
+            <span class="about-detail-icon"><svg class="ui-icon"><use href="#icon-heart"></use></svg></span>
+            <div><h3>Собирайте своё</h3><p>Сохраняйте любимые растения, добавляйте личные заметки и отмечайте сезонные наблюдения.</p></div>
+          </article>
+          <article class="about-detail">
+            <span class="about-detail-icon"><svg class="ui-icon"><use href="#icon-user"></use></svg></span>
+            <div><h3>Ваш профиль — по желанию</h3><p>Без аккаунта сайт работает как обычно. В профиле данные синхронизируются между устройствами, а вход по passkey можно настроить на этом устройстве.</p></div>
+          </article>
+          <article class="about-detail">
+            <span class="about-detail-icon"><svg class="ui-icon"><use href="#icon-spark"></use></svg></span>
+            <div><h3>Знакомьтесь с Flora</h3><p>Ботанический ИИ-помощник подскажет, как начать уход, и поможет разобраться с вопросами о растениях.</p></div>
+          </article>
+          <article class="about-detail">
+            <span class="about-detail-icon"><svg class="ui-icon"><use href="#icon-info"></use></svg></span>
+            <div><h3>Научные источники</h3><p>Фотографии предоставлены iNaturalist, GBIF и Wikimedia Commons. Авторство и ссылки указываются рядом с изображениями.</p></div>
+          </article>
+        </div>
+        <p class="project-credit">Создано Кузьменко Матвеем <span aria-hidden="true">·</span> С любопытством к миру растений</p>
+      </div>
+      <section class="guide-howto surface-card" aria-labelledby="flora-guide-title">
+        <h2 id="flora-guide-title">Знакомьтесь: Flora</h2>
+        <p class="guide-howto-intro">Flora — ботанический ИИ-помощник Flora-Anotomy. Она помогает разобраться с уходом, выбрать растение и найти информацию о видах. Ищите её на главной странице или в кнопке-помощнике внизу экрана.</p>
+        <div class="guide-howto-list">
+          <details class="guide-howto-item" open>
+            <summary>О чём можно спросить</summary>
+            <p>Например, как поливать монстеру, почему желтеют листья, какое растение выбрать для тени или как ухаживать за конкретным видом. Можно задавать уточняющие вопросы в том же диалоге. Если вопрос связан с растением из каталога, Flora может использовать сведения его карточки как дополнительную подсказку.</p>
+          </details>
+          <details class="guide-howto-item">
+            <summary>Когда Flora ищет информацию в интернете</summary>
+            <p>Для вопросов об актуальных сведениях — например, ценах, наличии и предложениях поблизости — Flora может выполнить веб-поиск и приложить ссылки на найденные источники. Для поиска цен ей может понадобиться ваш город или регион. Если подходящих результатов нет, она сообщит об этом, а не будет придумывать предложения. Проверяйте условия и актуальность информации на сайтах источников.</p>
+          </details>
+          <details class="guide-howto-item">
+            <summary>Как устроены ответы и история</summary>
+            <p>Ответы формирует Google Gemini: основная модель — Flash, а при её временной недоступности используется резервная Flash-Lite. Flora учитывает недавние сообщения диалога. История, черновик и позиция прокрутки сохраняются на устройстве; при входе в аккаунт пользовательские данные синхронизируются через Supabase. Кнопка в заголовке чата позволяет начать новый диалог.</p>
+          </details>
+          <details class="guide-howto-item">
+            <summary>Вход по passkey</summary>
+            <p>Если устройство и браузер поддерживают WebAuthn, войдите в аккаунт, добавьте passkey в окне профиля и используйте Face ID, Touch ID или системный PIN-код при следующем входе. Биометрические данные остаются на устройстве; сайт получает только открытый криптографический ключ. Для этой функции нужен HTTPS и настроенный сервер.</p>
+          </details>
+          <details class="guide-howto-item">
+            <summary>Что важно помнить о точности и приватности</summary>
+            <p>Flora — ИИ, поэтому может ошибаться: советы по поливу и лечению растений сверяйте с надёжными источниками и состоянием самого растения. Для свежих фактов смотрите приложенные ссылки. Для ответа требуется интернет; доступность и число запросов зависят от сервиса и его текущих лимитов. Текст вопроса и необходимый контекст отправляются на сервер помощника для подготовки ответа, поэтому не вводите пароли, адреса и другие личные или конфиденциальные данные.</p>
+          </details>
+        </div>
+      </section>
+      <section class="guide-howto surface-card" aria-labelledby="guide-howto-title">
+        <h2 id="guide-howto-title">Как пользоваться сайтом</h2>
+        <p class="guide-howto-intro">Выберите нужный раздел в меню. Основные шаги — ниже; полный список возможностей собран в карточках после инструкции.</p>
+        <div class="guide-howto-list">
+          <details class="guide-howto-item" open>
+            <summary>Найти растение</summary>
+            <p>Откройте «Каталог» и введите русское или научное название в строку поиска. В разделе «Фильтры» можно выбрать группу, сортировку, освещение и полив.</p>
+          </details>
+          <details class="guide-howto-item">
+            <summary>Собрать свою коллекцию</summary>
+            <p>Нажмите на сердечко в карточке растения, чтобы сохранить его, а затем откройте «Коллекцию». В подробной карточке можно оставить заметку; для сохранённых растений в коллекции также доступны отметки полива.</p>
+          </details>
+          <details class="guide-howto-item">
+            <summary>Следить за сезоном</summary>
+            <p>Перейдите в «Сезон», выберите месяц и год и найдите растение. Нажмите «Добавить», чтобы сохранить своё наблюдение за цветением.</p>
+          </details>
+          <details class="guide-howto-item">
+            <summary>Подобрать или открыть случайное растение</summary>
+            <p>В разделе «Подбор» выберите настроение и при желании группу или семейство. Для случайного открытия нажмите «Случайное растение» в нижнем меню. На главной также каждый день показывается новое «Растение дня»; нажмите на подпись к фото, чтобы открыть его источник.</p>
+          </details>
+          <details class="guide-howto-item">
+            <summary>Как устроен помощник Flora</summary>
+            <p>Нажмите «Спросить Flora» внизу экрана и задайте вопрос о растении или уходе. Для ответа нужен интернет. Это ИИ-помощник: перепроверяйте важные рекомендации и не отправляйте личные данные.</p>
+          </details>
+          <details class="guide-howto-item">
+            <summary>Проверить себя в игре</summary>
+            <p>Откройте «Угадай растение» в верхнем меню, посмотрите на фотографию и выберите один из вариантов названия. За правильные ответы начисляются очки.</p>
+          </details>
+          <details class="guide-howto-item">
+            <summary>Сравнить и изучить растения</summary>
+            <p>В каталоге или коллекции нажмите «Сравнить» у двух растений, затем откройте сравнение. В карточке растения можно посмотреть похожие виды и скачать PDF-памятку по уходу; недавно открытые карточки появятся в каталоге.</p>
+          </details>
+          <details class="guide-howto-item">
+            <summary>Настроить сайт и установить приложение</summary>
+            <p>В верхней панели выберите цветовую палитру и переключите светлую или тёмную тему. Нажмите значок загрузки, чтобы открыть инструкцию по установке сайта на устройство.</p>
+          </details>
+          <details class="guide-howto-item">
+            <summary>Импортировать или выгрузить каталог</summary>
+            <p>Нажмите Ctrl + Shift + A, чтобы открыть локальную панель управления. В ней можно экспортировать каталог в CSV или импортировать изменения для существующих карточек.</p>
+          </details>
+        </div>
+        <p class="guide-howto-storage">Коллекция и заметки хранятся только в браузере на этом устройстве; при очистке данных браузера они пропадут.</p>
+      </section>
+      <div class="guide-grid">
+        <article class="surface-card guide-card"><div class="guide-icon"><svg class="ui-icon"><use href="#icon-search"></use></svg></div><h3>Поиск и группы</h3><p>В атласе собраны карточки в шести группах. Ищите по русскому или научному названию, сортируйте результаты и фильтруйте по группе; если совпадений нет, каталог подскажет изменить запрос.</p></article>
+        <article class="surface-card guide-card"><div class="guide-icon"><svg class="ui-icon"><use href="#icon-sun"></use></svg></div><h3>Фильтры ухода</h3><p>Сузьте каталог по ориентировочному освещению и частоте полива. Эти значения помогают начать поиск, но не заменяют рекомендации для конкретного сорта и условий выращивания.</p></article>
+        <article class="surface-card guide-card"><div class="guide-icon"><svg class="ui-icon"><use href="#icon-heart"></use></svg></div><h3>Моя коллекция и заметки</h3><p>Нажмите на сердечко на карточке или в подробном описании, чтобы добавить растение в «Мою коллекцию». Оставляйте личные заметки в карточке; зелёный значок блокнота отмечает растения с сохранёнными записями. Коллекция и заметки доступны только в этом браузере.</p></article>
+        <article class="surface-card guide-card"><div class="guide-icon"><svg class="ui-icon"><use href="#icon-water"></use></svg></div><h3>Отметки полива</h3><p>В коллекции можно отметить дату полива. Атлас показывает время с последней отметки и примерный интервал, рассчитанный по общим ориентирам ухода; это не точное расписание и не замена проверке грунта.</p></article>
+        <article class="surface-card guide-card"><div class="guide-icon"><svg class="ui-icon"><use href="#icon-transfer"></use></svg></div><h3>Сравнение растений</h3><p>Выберите две карточки для сравнения группы, семейства, ориентиров освещения и полива, а также сложности ухода. Функция доступна из каталога и коллекции.</p></article>
+        <article class="surface-card guide-card"><div class="guide-icon"><svg class="ui-icon"><use href="#icon-search"></use></svg></div><h3>Недавно просмотренные</h3><p>Каталог показывает до пяти последних открытых карточек. Список можно очистить; он хранится локально в текущем браузере.</p></article>
+        <article class="surface-card guide-card"><div class="guide-icon"><svg class="ui-icon"><use href="#icon-calendar"></use></svg></div><h3>Сезонный трекер</h3><p>Отмечайте растения, цветение которых наблюдали в конкретном месяце и году. Трекер хранит личные наблюдения на устройстве и не подменяет справочные данные о сезонах цветения.</p></article>
+        <article class="surface-card guide-card"><div class="guide-icon"><svg class="ui-icon"><use href="#icon-leaf"></use></svg></div><h3>Игра «Угадай растение»</h3><p>Угадайте растение по фотографии: в каждом раунде показывается снимок и четыре варианта названия. За правильные ответы начисляются очки.</p></article>
+        <article class="surface-card guide-card"><div class="guide-icon"><svg class="ui-icon"><use href="#icon-file"></use></svg></div><h3>Ботаническая карточка PDF</h3><p>В подробной карточке растения можно скачать памятку по уходу с фотографией, названием, описанием и основными рекомендациями.</p></article>
+        <article class="surface-card guide-card"><div class="guide-icon"><svg class="ui-icon"><use href="#icon-transfer"></use></svg></div><h3>Импорт и экспорт CSV</h3><p>Откройте локальную панель сочетанием Ctrl + Shift + A. Экспортируйте каталог и импортируйте изменения русских названий, описаний, жизненной формы и категории для уже существующих карточек. Импорт новых видов без проверенных фото не поддерживается; изменения остаются в этом браузере.</p></article>
+        <article class="surface-card guide-card"><div class="guide-icon"><svg class="ui-icon"><use href="#icon-download"></use></svg></div><h3>Установка как PWA</h3><p>Если браузер предлагает установку, добавьте атлас на главный экран. Кэшированная оболочка помогает открыть приложение без сети; внешние фотографии могут потребовать интернет.</p></article>
+        <article class="surface-card guide-card"><div class="guide-icon"><svg class="ui-icon"><use href="#icon-palette"></use></svg></div><h3>Тема и палитра</h3><p>Выберите шалфейный, лавандовый, розовый или песочный оттенок и переключайте светлое или тёмное оформление. Выбор сохраняется на устройстве.</p></article>
+        <article class="surface-card guide-card"><div class="guide-icon"><svg class="ui-icon"><use href="#icon-info"></use></svg></div><h3>Источники и атрибуция</h3><p>Научные названия и классификация опираются на GBIF. Фотографии собраны из iNaturalist, GBIF и Wikimedia Commons; ссылка на источник, автор и лицензия указаны рядом с фото, если предоставлены.</p></article>
+        <article class="surface-card guide-card"><div class="guide-icon"><svg class="ui-icon"><use href="#icon-flower"></use></svg></div><h3>Растение дня</h3><p>На главной ежедневно появляется новая находка из подборки необычных тропических растений, орхидей, цветущих лиан и кактусов. Нажмите на подпись под фото, чтобы увидеть источник и сведения об авторстве.</p></article>
+        <article class="surface-card guide-card"><div class="guide-icon"><svg class="ui-icon"><use href="#icon-spark"></use></svg></div><h3>Помощник Flora</h3><p>В чате можно задавать вопросы о растениях, уходе и актуальных предложениях. Для свежих сведений Flora ищет информацию в интернете и показывает источники; история диалога сохраняется отдельно для каждого ника в браузере. Ответы ИИ могут быть неточными, поэтому важные советы и цены проверяйте по ссылкам. Не отправляйте личные данные.</p></article>
+      </div>
+      <div class="quick-links">
+        <button class="quick-link" type="button" data-go="catalog"><span class="quick-link-icon"><svg class="ui-icon"><use href="#icon-book"></use></svg></span><span>Перейти в каталог</span><span aria-hidden="true">→</span></button>
+        <button class="quick-link" type="button" data-go="season"><span class="quick-link-icon"><svg class="ui-icon"><use href="#icon-calendar"></use></svg></span><span>Открыть сезонный трекер</span><span aria-hidden="true">→</span></button>
+        <button class="quick-link" type="button" data-go="picker"><span class="quick-link-icon"><svg class="ui-icon"><use href="#icon-spark"></use></svg></span><span>Запустить подбор</span><span aria-hidden="true">→</span></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer shell">
+    <div class="footer-main">
+      <a class="footer-brand" href="#home" aria-label="Flora-Anotomy — на главную">
+        <span class="brand-mark" aria-hidden="true"><svg class="ui-icon"><use href="#icon-flower"></use></svg></span>
+        <strong>Flora-Anotomy</strong>
+      </a>
+    </div>
+    <div class="footer-bottom">
+      <span>Flora-Anotomy · Создатель: Кузьменко Матвей · Научные данные и фотографии: GBIF · iNaturalist · Wikimedia Commons</span>
+    </div>
+  </footer>
+
+  <nav class="bottom-dock" role="navigation" aria-label="Основные разделы">
+    <button class="dock-tab" type="button" data-go="home"><span class="dock-icon"><svg class="ui-icon"><use href="#icon-home"></use></svg></span><span class="dock-label">Главная</span></button>
+    <button class="dock-tab" type="button" data-go="catalog"><span class="dock-icon"><svg class="ui-icon"><use href="#icon-book"></use></svg></span><span class="dock-label">Атлас</span></button>
+    <button class="dock-tab" type="button" data-go="luck"><span class="dock-icon"><svg class="ui-icon"><use href="#icon-dice"></use></svg></span><span class="dock-label">Случайное растение</span></button>
+    <button class="dock-tab" type="button" data-go="picker"><span class="dock-icon"><svg class="ui-icon"><use href="#icon-spark"></use></svg></span><span class="dock-label">Подбор</span></button>
+    <button class="dock-tab" type="button" data-go="guide"><span class="dock-icon"><svg class="ui-icon"><use href="#icon-info"></use></svg></span><span class="dock-label">О проекте</span></button>
+  </nav>
+
+  <dialog id="flower-dialog" aria-labelledby="detail-name">
+    <div class="dialog-content" id="flower-detail"></div>
+  </dialog>
+  <div class="compare-dock" id="compare-dock" role="region" aria-label="Сравнение растений" hidden>
+    <div class="compare-dock-copy">
+      <strong id="compare-count" aria-live="polite">Сравнить (0/2)</strong>
+      <span id="compare-hint">Выберите два растения в каталоге</span>
+    </div>
+    <button class="button small" id="compare-open" type="button" disabled>Сравнить</button>
+    <button class="button ghost small" id="compare-clear" type="button">Очистить</button>
+  </div>
+  <dialog class="compare-dialog" id="compare-dialog" aria-labelledby="compare-title">
+    <div class="compare-dialog-content">
+      <button class="dialog-close" id="compare-close" type="button" aria-label="Закрыть сравнение">✕</button>
+      <h2 id="compare-title">Сравнение растений</h2>
+      <div class="compare-results" id="compare-results"></div>
+    </div>
+  </dialog>
+  <div class="flora-toast-region" id="flora-toast-region" aria-live="polite" aria-atomic="true"></div>
+
+  <aside class="admin-panel" id="admin-panel" aria-label="Локальное управление каталогом" hidden>
+    <button class="dialog-close" id="admin-close" type="button" aria-label="Закрыть панель">✕</button>
+    <div class="eyebrow">Локальный режим · без авторизации</div>
+    <h2>Управление каталогом</h2>
+    <p>Откройте панель сочетанием Ctrl + Shift + A. CSV меняет только локальную копию уже существующих карточек: русские названия, описания, жизненные формы и категории. Новые виды без проверенных фотографий не добавляются.</p>
+    <div class="admin-actions">
+      <button class="button small" id="catalog-export" type="button">Экспорт CSV</button>
+      <button class="button ghost small" id="catalog-import-open" type="button">Импорт CSV</button>
+      <input id="catalog-import-file" type="file" accept=".csv,text/csv" hidden>
+    </div>
+    <p class="admin-status" id="admin-status" role="status"></p>
+  </aside>
+
+  <dialog class="install-dialog" id="install-dialog" aria-labelledby="install-title">
+    <div class="install-card">
+      <button class="modal-close" id="install-close" type="button" aria-label="Закрыть инструкцию">×</button>
+      <div class="modal-flower" aria-hidden="true"><svg class="ui-icon"><use href="#icon-flower"></use></svg></div>
+      <div class="eyebrow">Приложение для вашего устройства</div>
+      <h2 id="install-title">Добавьте ботанический атлас на главный экран</h2>
+      <p class="install-instructions" id="install-instructions">В меню браузера выберите «Установить приложение» или «Добавить на главный экран». Сайт должен быть открыт по HTTPS или на localhost.</p>
+      <button class="button full" id="install-confirm" type="button" hidden>Установить приложение</button>
+    </div>
+  </dialog>
+
+  <dialog class="account-dialog" id="account-dialog" aria-labelledby="account-title">
+    <section class="account-card">
+      <button class="modal-close" id="account-close" type="button" aria-label="Закрыть аккаунт">×</button>
+      <div class="modal-flower" aria-hidden="true"><svg class="ui-icon"><use href="#icon-leaf"></use></svg></div>
+      <div class="eyebrow">Личная коллекция</div>
+      <h2 id="account-title">Ваш аккаунт Flora</h2>
+      <div id="account-guest">
+        <p class="account-description">Создайте аккаунт, чтобы сохранять растения, заметки и наблюдения и открывать их на других устройствах.</p>
+        <div class="account-modes" role="group" aria-label="Режим аккаунта">
+          <button type="button" data-auth-mode="signup" aria-pressed="true">Регистрация</button>
+          <button type="button" data-auth-mode="signin" aria-pressed="false">Войти</button>
+        </div>
+        <form class="account-form" id="account-form">
+          <label class="account-label" for="account-nickname">Ник</label>
+          <input id="account-nickname" name="nickname" type="text" minlength="3" maxlength="24" pattern="[\p{L}\p{N}_.\-]+" autocomplete="username" required>
+          <label class="account-label" for="account-password">Пароль</label>
+          <input id="account-password" name="password" type="password" minlength="8" autocomplete="current-password" required>
+          <p class="account-security-note">Пароль придумываете вы. Нужен минимум 8 символов. Для аккаунтов по нику восстановление пароля по email недоступно — сохраните пароль в безопасном месте.</p>
+          <p class="account-status" id="account-status" role="status" aria-live="polite"></p>
+          <button class="button full" id="account-submit" type="submit">Создать аккаунт</button>
+        </form>
+        <div class="account-passkey-divider" aria-hidden="true"><span>или</span></div>
+        <button class="button ghost full account-passkey-button" id="account-passkey-login" type="button">Войти по Face ID / Touch ID</button>
+        <p class="account-passkey-note" id="account-passkey-note">Для входа по passkey нужен сайт на HTTPS и устройство с поддержкой биометрии или PIN-кода.</p>
+        <button class="button ghost full account-continue" id="account-continue" type="button">Продолжить без аккаунта</button>
+      </div>
+      <div id="account-user" hidden>
+        <p class="account-description">Вы вошли как <strong id="account-user-nickname"></strong>. Избранное, заметки и наблюдения синхронизируются с вашим аккаунтом.</p>
+        <p class="account-status" id="account-sync-status" role="status" aria-live="polite"></p>
+        <button class="button ghost full account-passkey-button" id="account-passkey-register" type="button">Добавить Face ID / Touch ID</button>
+        <p class="account-passkey-note" id="account-passkey-user-note">Passkey позволит входить без ника и пароля. Сайт хранит только публичный ключ; биометрические данные остаются на устройстве.</p>
+        <button class="button ghost full" id="account-signout" type="button">Выйти из аккаунта</button>
+      </div>
+    </section>
+  </dialog>
+
+  <script src="./ui-enhancements.js?v=1"></script>
+  <script src="./flora-extra.js"></script>
+  <script src="./flora-additional.js"></script>
+  <script src="./flora-houseplants.js"></script>
+  <script src="./flora-expansion.js"></script>
+  <script src="./flora-expansion-media.js"></script>
+  <script src="./flora-verified-media.js"></script>
+  <script src="./flora-additional-media.js"></script>
+  <script src="./flora-more.js"></script>
+  <script src="./flora-more-media.js"></script>
+  <script src="./flora-new-pack.js"></script>
+  <script src="./flora-1000.js"></script>
+  <script src="./flora-1111.js"></script>
+  <script src="./script.js?v=102"></script>
+  <script>window.FLORA_AI_ENDPOINT = "https://flora-anotomy-ai.ukrainman21012.workers.dev";</script>
+  <script src="./ai-chat.js?v=103"></script>
+  <script src="./supabase-config.js?v=2"></script>
+  <script src="./supabase-auth.js?v=8"></script>
+  <script>
+    (() => {
+      const paletteSelect = document.querySelector("#palette-select");
+      const paletteSwatches = document.querySelectorAll("[data-palette-choice]");
+      const syncPaletteSwatches = () => paletteSwatches.forEach((swatch) => {
+        swatch.setAttribute("aria-pressed", String(swatch.dataset.paletteChoice === paletteSelect.value));
+      });
+    paletteSwatches.forEach((swatch) => swatch.addEventListener("click", () => {
+      paletteSelect.value = swatch.dataset.paletteChoice;
+      paletteSelect.dispatchEvent(new Event("change", { bubbles: true }));
+      syncPaletteSwatches();
+    }));
+    paletteSelect.addEventListener("change", syncPaletteSwatches);
+    syncPaletteSwatches();
+
+    document.querySelector("#observations-empty-action").addEventListener("click", () => {
+      document.querySelector("#season-search").focus();
+      document.querySelector("#season-search").scrollIntoView({ behavior: "smooth", block: "center" });
+    });
+
+    const enhancePlantImages = (root) => {
+      const images = [...(root.matches?.("img") ? [root] : []), ...root.querySelectorAll("img")];
+      images.forEach((image) => {
+        if (!image.hasAttribute("loading") && !image.closest(".hero-art") && image.fetchPriority !== "high") {
+          image.loading = "lazy";
+        }
+        if (!image.getAttribute("alt")?.trim()) {
+          const cardName = image.closest(".flower-card")?.querySelector(".flower-card-name h3")?.textContent?.trim();
+          const detailName = document.querySelector("#detail-name")?.textContent?.trim();
+          const randomName = image.closest(".random-pick-plant")?.querySelector(".random-pick-info h2")?.textContent?.trim();
+          image.alt = cardName ? `Фотография растения: ${cardName}` : detailName ? `Фотография растения: ${detailName}` : randomName ? `Фотография растения: ${randomName}` : "Фотография растения из ботанического атласа";
+        }
+      });
+    };
+    enhancePlantImages(document);
+    new MutationObserver((records) => records.forEach((record) => {
+      record.addedNodes.forEach((node) => {
+        if (node.nodeType === Node.ELEMENT_NODE) enhancePlantImages(node);
+      });
+    })).observe(document.body, { childList: true, subtree: true });
+    })();
+  </script>
+</body>
+</html>

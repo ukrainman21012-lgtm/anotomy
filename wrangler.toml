@@ -1,0 +1,12 @@
+name = "flora-anotomy-ai"
+main = "worker.js"
+compatibility_date = "2026-10-27"
+
+[vars]
+SITE_ORIGIN = "https://flora-anotomy.linkpc.net"
+SUPABASE_URL = "https://orvlpmbbzymupnsgydoe.supabase.co"
+
+[[ratelimits]]
+name = "CHAT_RATE_LIMITER"
+namespace_id = "1001"
+simple = { limit = 12, period = 60 }
